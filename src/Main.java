@@ -158,7 +158,7 @@ class ATMEntrance extends JPanel
     {
         super.paintComponent(g);
         try {
-            pic=ImageIO.read(new File("C:\\Users\\celestial\\Downloads\\win.jpg"));
+            pic=ImageIO.read(new File(System.getProperty("user.dir")+"\\src\\win.jpg"));
         } catch (IOException e) {
             System.out.println("NO File");
         }
